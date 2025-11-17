@@ -35,7 +35,7 @@ pipeline{
         }
         stage("Deploy"){
             steps{
-                sh "docker compose up -d --build ${env.DockerUser}/two-tier-flask-app:latest"
+                sh "docker compose up -d --build flask-app"
                 echo "Docker compose done"
             }
         }
