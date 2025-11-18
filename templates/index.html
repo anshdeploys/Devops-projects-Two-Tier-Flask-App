@@ -52,16 +52,15 @@
         }
 
         .profile img {
-             width: 150px;
-             height: 150px;
-             border-radius: 50%;
-             border: 4px solid #fff;
-             object-fit: cover;
-             object-position: center;
-             margin-bottom: 20px;
-             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
-             transition: all 0.3s ease;
+            width: 150px !important;
+            height: 150px !important;
+            border-radius: 50% !important;
+            border: 4px solid #fff !important;
+            object-fit: cover !important;     /* Force image to fill circle */
+            object-position: center !important;
+            display: block !important;
         }
+
 
         .profile img:hover {
             box-shadow: 0 0 25px #4ACDF7, 0 10px 30px rgba(0, 0, 0, 0.5);
